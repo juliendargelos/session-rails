@@ -10,13 +10,14 @@ Gem::Specification.new do |s|
   s.authors     = ['Julien Dargelos']
   s.email       = ['contact@juliendargelos.com']
   s.homepage    = 'https://www.github.com/juliendargelos/session-rails'
-  s.summary     = 'Makes user session smooth.'
-  s.description = 'Makes user session smooth.'
+  s.summary     = 'A session Active Model.'
+  s.description = 'A session Active Model.'
   s.license     = 'MIT'
 
-  s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
+  s.files = Dir['{app,config,db,lib}/**/*', 'MIT-LICENSE', 'Rakefile', 'README.md']
 
-  s.add_dependency "rails", "~> 5.2.0"
+  s.add_dependency 'rails', '~> 5.2.0'
 
-  s.add_development_dependency "sqlite3"
+  s.add_development_dependency 'sqlite3'
+  s.add_development_dependency 'bcrypt'
 end
